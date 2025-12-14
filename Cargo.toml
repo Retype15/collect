@@ -1,0 +1,58 @@
+[package]
+name = "collect"
+version = "1.0.0"
+edition = "2024"
+authors = ["RetypeOS <reynierramos280@gmail.com>"]
+description = "Optimized file collector and filtering tool."
+license = "MIT"
+repository = "https://github.com/Retype15/collect"
+keywords = ["file", "collector", "filtering", "tool"]
+categories = ["command-line-utilities", "file-management"]
+
+[dependencies]
+anyhow = "1.0.100"
+atty = "0.2.14"
+clap = { version = "4.5.53", features = ["derive", "wrap_help"] }
+ignore = "0.4.25"
+memchr = "2.7.6"
+regex = "1.12.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[lints]
+rust.keyword_idents_2024 = "forbid"
+rust.non_ascii_idents = "forbid"
+rust.unsafe_op_in_unsafe_fn = "forbid"
+
+rust.unsafe_code = "deny"
+
+rust.elided_lifetimes_in_paths = "warn"
+rust.missing_debug_implementations = "warn"
+rust.trivial_numeric_casts = "warn"
+rust.unreachable_pub = "warn"
+rust.unused_import_braces = "warn"
+
+[lints.clippy]
+panic = "deny"
+unwrap_used = "deny"
+cast_possible_truncation = "deny"
+cast_sign_loss = "deny"
+indexing_slicing = "warn"
+
+cargo_common_metadata = "warn"
+dbg_macro = "warn"
+semicolon_if_nothing_returned = "warn"
+todo = "warn"
+use_self = "warn"
+unnecessary_wraps = "warn"
+
+pedantic = { level = "allow", priority = -1 }
+nursery = { level = "allow", priority = -1 }
+restriction = { level = "allow", priority = -1 }
+too_many_arguments = "allow"
+module_name_repetitions = "allow"

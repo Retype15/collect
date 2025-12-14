@@ -2,7 +2,7 @@
 name = "collect"
 version = "1.0.0"
 edition = "2024"
-authors = ["RetypeOS <reynierramos280@gmail.com>"]
+authors = ["Retype15 <reynierramos280@gmail.com>"]
 description = "Optimized file collector and filtering tool."
 license = "MIT"
 repository = "https://github.com/Retype15/collect"

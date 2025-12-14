@@ -1,5 +1,5 @@
 /*
-    Project: RetypeOS Collect CLI
+    Project: Retype15 Collect CLI
     Context: High-performance file traversal and filtering tool.
 
     Architecture:
@@ -27,7 +27,7 @@ use std::time::Instant;
 #[derive(Parser, Debug)]
 #[command(
     name = "collect",
-    author = "RetypeOS",
+    author = "Retype15",
     version = "1.1.0",
     about = "Optimized file collector and filtering tool.",
     long_about = "Traverses directory trees respecting gitignore, applies filters, and optionally captures content."
@@ -340,7 +340,7 @@ fn stream_file_content(
 fn print_guide() {
     println!(
         r#"
-    RETYPEOS COLLECT - USER GUIDE
+    COLLECT CLI - USER GUIDE
     =============================
 
     FILTERS:

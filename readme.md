@@ -32,7 +32,7 @@ This tool adheres to the philosophy of **"Obsessive Optimization"**:
 
 Download the latest binary for your operating system (Windows, macOS, or Linux) directly from our **Releases Page**.
 
-1. Go to **[Releases](https://github.com/RetypeOS/collect/releases/latest)**.
+1. Go to **[Releases](https://github.com/Retype15/collect/releases/latest)**.
 2. Download the archive for your architecture.
 3. Extract the binary and place it in your system `PATH`.
 
@@ -41,7 +41,7 @@ Download the latest binary for your operating system (Windows, macOS, or Linux) 
 If you prefer to build it yourself, ensure you have Rust installed.
 
 ```bash
-git clone https://github.com/RetypeOS/collect.git
+git clone https://github.com/Retype15/collect.git
 cd collect
 cargo build --release
 ```
@@ -143,7 +143,3 @@ collect --depth 2 --content
 
 - **Broken Pipes**: If piped to tools like `head` or `less` which close the stream early, `collect` detects `io::ErrorKind::BrokenPipe` and exits cleanly with code 0.
 - **Permission Denied**: Logs a warning to stderr (unless `--quiet` is set) and continues traversal.
-
----
-
-**RetypeOS** - *Engineering Excellence.*
